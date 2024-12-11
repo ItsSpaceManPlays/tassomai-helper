@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "checkJs": false,
+        "baseUrl": ".",
+        "typeRoots": ["./types"]
+    }
+}

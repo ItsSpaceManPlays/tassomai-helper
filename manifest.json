@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Tassomai extension",
+    "description": "Tassomai taking too long? Not anymore",
+    "version": "1.0",
+    "permissions": [
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "assets/favicon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["src/content.js"],
+            "matches": [
+                "https://app.tassomai.com/*"
+            ]
+        }
+    ]
+}
